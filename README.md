@@ -1,5 +1,7 @@
 # Tensorflow_windows_dll
-Compiled Tensorflow using CMake and Visual Studio 2015.(tutorial would be updated in a few days)
+Since Tensorflow project only support CPU version dll,
+I compiled Tensorflow GPU version using CMake and Visual Studio 2015.
+(tutorial would be updated in a few days)
 
 -tensorflow.dll link:https://pan.baidu.com/s/1jIBriPw pwd:b4ay
 
