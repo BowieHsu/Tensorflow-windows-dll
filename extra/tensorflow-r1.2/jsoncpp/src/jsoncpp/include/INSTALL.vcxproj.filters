@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\c3cce585b3fe9a7c76c6dd7eb6917ec3\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E20F746B-46A7-3674-9EEA-B0B4851253B3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{0DB30FAF-165D-301D-8449-9A9C6560BE86}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe -HF:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp -BF:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp --check-stamp-file F:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp/CMakeLists.txt;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeLists.txt;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\3.8.0-rc2\CMakeSystem.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\3.8.0-rc2\CMakeCCompiler.cmake;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\3.8.0-rc2\CMakeCXXCompiler.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\3.8.0-rc2\CMakeRCCompiler.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\src\lib_json\version.h.in;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\version.in;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\pkg-config\jsoncpp.pc.in;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe -HF:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp -BF:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp --check-stamp-file F:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp/CMakeLists.txt;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeLists.txt;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\3.8.0-rc2\CMakeSystem.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\3.8.0-rc2\CMakeCCompiler.cmake;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\3.8.0-rc2\CMakeCXXCompiler.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\3.8.0-rc2\CMakeRCCompiler.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\src\lib_json\version.h.in;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\version.in;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\pkg-config\jsoncpp.pc.in;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe -HF:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp -BF:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp --check-stamp-file F:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp/CMakeLists.txt;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeLists.txt;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\3.8.0-rc2\CMakeSystem.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\3.8.0-rc2\CMakeCCompiler.cmake;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\3.8.0-rc2\CMakeCXXCompiler.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\3.8.0-rc2\CMakeRCCompiler.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\src\lib_json\version.h.in;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\version.in;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\pkg-config\jsoncpp.pc.in;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe -HF:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp -BF:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp --check-stamp-file F:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:/tensorflow-r1.2/tensorflow-r1.2/tensorflow/contrib/cmake/build/jsoncpp/src/jsoncpp/CMakeLists.txt;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeLists.txt;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\3.8.0-rc2\CMakeSystem.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\3.8.0-rc2\CMakeCCompiler.cmake;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\3.8.0-rc2\CMakeCXXCompiler.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\3.8.0-rc2\CMakeRCCompiler.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\src\lib_json\version.h.in;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\version.in;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\pkg-config\jsoncpp.pc.in;F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\ZERO_CHECK.vcxproj">
+      <Project>159F64C1-C594-3019-917E-58932BA694C6</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\src\lib_json\jsoncpp_lib_static.vcxproj">
+      <Project>13A3D78B-7EDD-326A-B32F-85B90FF241CA</Project>
+      <Name>jsoncpp_lib_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\src\test_lib_json\jsoncpp_test.vcxproj">
+      <Project>221ADBF5-57E7-367A-AAB6-034D9E889F05</Project>
+      <Name>jsoncpp_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\tensorflow-r1.2\tensorflow-r1.2\tensorflow\contrib\cmake\build\jsoncpp\src\jsoncpp\src\jsontestrunner\jsontestrunner_exe.vcxproj">
+      <Project>7649D8AC-ECB8-3036-9BEA-49B9B4276AFF</Project>
+      <Name>jsontestrunner_exe</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
