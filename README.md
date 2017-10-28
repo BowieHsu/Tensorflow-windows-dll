@@ -26,6 +26,20 @@ I compiled tensorflow-r1.2 GPU version using CMake,VisualStudio 2015, CUDA8.0, c
 
 - 下载tensorflow.lib、libprotobuf.lib,放置在Tensorflow-windows-dll/extra/tensorflow-r1.2/目录下
 
-- 下载inception_v3.pb，放置在Tensorflow-window-dll/data目录下
+- 下载inception_v3.pb，放置在Tensorflow-windows-dll/data目录下
 
-- 打开visual studio Solution 'tensorflow_classification', 编译选项为'Release' 'x64'
+- 打开Tensorflow-windows-dll/build/vc14目录下的visual studio Solution 'tensorflow_classification', 将编译选项为 **'Release' 'x64'**
+
+## How to use tensorflow.dll
+
+- Install VisualStudio Community2015 Install NVIDIA CUDA 8.0
+
+- git clone https://github.com/BowieHsu/Tensorflow-windows-dll
+
+- Download tensorflow.dll, place it under Tensorflow-windows-dll/bin
+
+- Download tensorflow.lib and libprotobuf.lib, place theme under Tensorflow-windows-dll/extra/tensorflow-r1.2/
+
+- Download inception_v3.pb, place it under Tensorflow-windows-dll/data
+
+- Open Visual Studio Solution "tensorflow_classification.sln" which should be under Tensorflw-windows-dll/build/vc14，**Solution configurations option choose "Release", Soluton Platform option choose "x64"**
